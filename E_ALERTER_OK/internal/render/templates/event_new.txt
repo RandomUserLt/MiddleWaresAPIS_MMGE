@@ -1,0 +1,11 @@
+---
+subject: "[EDT] Nouveau cours: {{ .Title }}"
+---
+
+Nouveau cours: {{ .Title }}
+Quand: {{ .Start }} → {{ .End }}
+Où: {{ .Location }}
+
+{{- if .EmailText }}
+{{ .EmailText }}
+{{- end }}
